@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { FileText, Zap, GitBranch, Mail, Linkedin, Globe, Database, CheckCircle, AlertCircle, Settings, ArrowRight, Code, Workflow, BarChart3, PieChart, Network } from 'lucide-react'
+import Image from 'next/image'
+import { FileText, Zap, GitBranch, Mail, Linkedin, Globe, Database, CheckCircle, AlertCircle, Settings, ArrowRight, Code, Workflow, BarChart3, Network } from 'lucide-react'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'make' | 'n8n'>('make')
@@ -147,9 +148,11 @@ function WorkflowDiagram({ platform }: { platform: 'make' | 'n8n' }) {
     <div className="overflow-x-auto">
       {/* Platform Image */}
       <div className="mb-6 flex justify-center">
-        <img 
+        <Image 
           src={imageSrc} 
           alt={imageAlt}
+          width={800}
+          height={400}
           className="max-w-full h-auto rounded-lg shadow-md"
           style={{ maxHeight: '300px' }}
         />
