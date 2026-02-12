@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-/** @type {import('tailwindcss').Config} */
 const config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
