@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Documentation moderne pour workflows Make et n8n - Automation Marketing",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "pages:build": "npx @cloudflare/next-on-pages",
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "lucide-react": "^0.263.1",
     "next": "^16.1.6",
